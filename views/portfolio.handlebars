@@ -1,6 +1,8 @@
 <div class="headingArea">
-	<h1>Derrick's Portfolio</h1>
-	<p>Here's what everyone came to see, right? Over the past several years, I have spent a lot of time head-first in front end code - anything from HTML and CSS to more intensive JavaScript and jQuery, manipulating the DOM or creating snappy apps with AJAX functionality. Spend some time perusing the following highlights, if you will. Hopefully they will speak for themselves!</p>
+	<h1>{{{data.heading}}}</h1>
+	{{#each data.copy}}
+	<p>{{{this}}}</p>
+	{{/each}}
 </div>
 <ul id="portfolioGrid" class="clearfix">
 	<li>

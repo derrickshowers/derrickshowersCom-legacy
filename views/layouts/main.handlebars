@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-US" class="no-js"> <!--<![endif]-->
+<html>
+{{#data}}
+<head>
+	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+	<title>Derrick Showers | Web Developer</title>
+	<meta name="description" content="">
+	<meta name="viewport" id="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=10.0,initial-scale=1.0" />
+	<meta name="format-detection" content="telephone=no">
+	
+	<!-- Favicon and iOS icons -->
+	<link rel="apple-touch-icon" href="/apple-touch-icon-57x57-precomposed" />
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72-precomposed" />
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114-precomposed" />
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144-precomposed" />
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<!-- Head JS -->
+	<script src="/js/libs/modernizr-2.6.2.min.js"></script>
+	
+</head>
+<body id="{{{id}}}">
+
+	<header>
+		<div class="container">
+			<a href="/"><img id="logo" alt="Company Logo" src="/img/logo.png" /></a>
+			<select id="socialDropdown" class="cd-select">
+			    <option value="-1" selected>Other Ways To Connect</option>
+			    <option value="1" class="fb">Facebook</option>
+			    <option value="2" class="twitter">Twitter</option>
+			    <option value="3" class="li">Linked In</option>
+			</select>
+			<ul id="social">
+				<li><a id="li" href="http://www.linkedin.com/in/derrickshowers" target="_blank">Linked-In</a></li>
+				<li><a id="fb" href="http://facebook.com/derrickshowersweb" target="_blank">Facebook</a></li>
+				<li><a id="twitter" href="http://twitter.com/DerrickShowers" target="_blank">Twitter</a></li>
+			</ul>
+			<nav>
+				<ul id="menu-main-navigation" class="menu">
+					<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/about/">Who Is This?</a></li>
+					<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/portfolio/">Portfolio</a></li>
+					<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/contact/">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<div class="container">
+	{{{../body}}}
+	</div>
+
+	<footer>
+		<div class="container">
+			<ul>
+				<li class="left">407.756.0916&nbsp;&nbsp;|&nbsp;&nbsp;<a href="mailto:derrick@derrickshowers.com">derrick@derrickshowers.com</a></li>
+				<li class="right">&copy; 2014 DerrickShowers.com. All Rights Reserved.</li>
+			</ul>
+		</div>
+	</footer>
+
+	<script src="/js/ds.min.js"></script>
+
+	{{{footerScripts}}}
+
+	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+	<script>
+		var _gaq=[['_setAccount','UA-26064669-1'],['_trackPageview']];
+		(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+		g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+		s.parentNode.insertBefore(g,s)}(document,'script'));
+	</script>
+
+{{/data}}
+</body>
+</html>
