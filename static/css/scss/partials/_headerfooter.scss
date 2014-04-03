@@ -1,0 +1,131 @@
+// Header styles
+header {
+	height: 120px; width: 100%;
+	background: #333333;
+	background: -webkit-linear-gradient(top,  #484848 0%,#333333 100%);
+	background: linear-gradient(to bottom, #484848 0%, #333333 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#666666', endColorstr='#333333',GradientType=0 );
+	box-shadow: 0 3px 6px 3px #333;
+	position: relative;
+	z-index: 100;
+	
+	// Other header items
+	#logo{
+		top: 16px; left: 18px;
+		position: absolute;
+		max-width: 140px;
+	}
+	
+	#headerLine {
+		top: 93px; left: 20px;
+		height:2px; width: 90%;
+		position: absolute;
+		background: url(../img/bg_headerLine.png) repeat-x;
+	}
+	
+	// Header social widget
+	#social {
+		display: none;
+		top: 10px; right: 20px;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		position: absolute;
+		
+		li {
+			margin: 2px 4px;
+			float: left;
+			
+			a {
+				background: url(../img/social_icons.png) no-repeat;
+				display: block;
+				height: 15px; width: 15px;
+				text-indent: -9999px;
+			}
+			
+			#li {
+				background-position: 0 -30px;
+			}
+			
+			#twitter {
+				background-position: 0 -15px;
+			}
+			
+		}	
+	}
+	
+	// Main navigation
+	nav {
+		top: 75px; right: 10px;
+		font: 30px/30px BebasNeueRegular, Verdana, Arial, sans-serif;
+		text-transform: uppercase;
+		position: absolute;
+		
+		a {
+			color: #FFF;
+			text-decoration: none;
+		}
+		
+		li {
+			border-radius: 5px;
+			padding: 5px 10px;
+		}
+		
+		li:hover {
+			background-color: #FFF;
+		}
+		
+		li:hover a {
+			color: #333;
+			text-decoration: none;
+		}
+		
+		ul {
+			padding: 0 0 0 20px;
+			margin: 0;
+			list-style: none;
+		}
+		
+		ul li {
+			float: left;
+			margin: 0 5px;
+		}
+		
+		.current-menu-item a,
+		.current_page_parent a {
+			color: #428bca;
+		}
+		
+	}
+	
+}
+
+// Footer styles
+footer {
+	height: 30px; width: 100%;
+	background-color: #1C3664;
+	border-top: 3px solid #333;
+	
+	a {
+		color: #FFF;
+		text-decoration: none;
+	}
+	
+	a:hover {
+		color: #FFF;
+		text-decoration: underline;
+	}
+	
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0 10px;
+		color: #FFF;
+		font-size: 11px;
+		
+		li {
+			line-height: 25px;
+		}
+	}
+	
+}

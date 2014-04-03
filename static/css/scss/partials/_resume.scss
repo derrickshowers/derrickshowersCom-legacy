@@ -1,0 +1,153 @@
+#smallScreenResume {
+	display: none;
+}
+#resume {
+	width: 610px;
+	position: relative;
+	border: 1px solid #999;
+	-webkit-box-shadow: 3px 3px 5px 0px #333;
+	box-shadow: 3px 3px 5px 0px #333;
+	margin: 0 auto 100px;
+	
+	h2, h3, h4, p, a {
+		font-family: Verdana, sans-serif;
+	}
+	
+	h2 {
+		font-size: 25px;
+		font-weight: bold;
+		margin-bottom: 0;
+	}
+	h3 {
+		font-size: 14px;
+		font-style: oblique;
+		font-weight: bold;
+		color: #428BCA;
+		margin-bottom: 0;
+		margin-top: 10px;
+		line-height: 18px;
+		text-transform: none;
+	}
+	h4 {
+		font-size: 14px;
+		font-weight: bold;
+		line-height: 18px;
+		margin-bottom: 0;
+		color: #333;
+		text-transform: none;
+	}
+	p {
+		font-size: 11px;
+		line-height: 15px;
+	}
+	a {
+		color: #333;
+	}
+	article {
+		position: relative;
+		overflow: hidden;
+	}
+	section {
+		overflow: hidden;
+	}
+	.lightItalics {
+		color: #666;
+		font-style: oblique;
+	}
+	.gray {
+		color: #666;
+	}
+	.noPaddingBelow {
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+	.borderBelow {
+		padding-bottom: 5px;
+		&:after {
+			left: 0; bottom: 0;
+			height: 1px; width: 80%;
+			margin: 0 10%;
+			position: absolute;
+			border-bottom: 1px dotted #999;
+			content: "";
+		}
+	}
+	#resumeHeading {
+		height: 155px;
+		border-top: 17px solid #1C3664;
+		background: url(../img/resume_headerBg.png) repeat-x;
+		
+		#resumeLogo {
+			top: 40px; left: 30px;
+			width: 150px; height: 82px;
+			position: absolute;
+		}
+		#resumeContactInfo {
+			top: 5px; left: 210px;
+			position: absolute;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			
+			li {
+				font-size: 14px;
+			}
+			
+		}
+		
+	}
+
+	#resumeExperience {
+		width: 265px;
+		float: left;
+		margin-left: 30px;
+		
+		aside {
+			width: 60px;
+			float: left;
+			font-size: 10px;
+			text-align: right;
+			padding-right: 2px;
+		}
+		section {
+			width: 195px;
+			float: right;
+			padding-left: 2px;
+		}
+		
+	}
+	#resumeSkills {
+		width: 265px;
+		float: right;
+		margin-right: 30px;
+	}
+	#resumeSkillsOther {
+		list-style: none;
+		font-size: 11px;
+		margin: 0;
+		padding: 0;
+		
+		li {
+			float: left;
+			width: 85px;
+			line-height: 15px;
+		}
+		
+	}
+	#resumeFooter {
+		width: 608px;
+		clear: both;
+		text-align: center;
+		line-height: 17px;
+		background-color: #1C3664;
+		color: #FFF;
+		font-style: oblique;
+		font-size: 8px;
+		padding: 0;
+		margin: 0;
+	}
+	#download{
+		bottom: -30px; right: 0;
+		position: absolute;
+	}
+}
