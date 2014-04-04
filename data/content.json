@@ -9,7 +9,12 @@
 		"footerScripts" : "<script src='//cdn.derrickshowers.com/dsCarousel.min.js'></script><script>$('#dsCarouselContainer').dsCarousel({slideDelay: 6000});</script>"
 	},
 	"about" : {
-		"id" : "about"
+		"id" : "about",
+		"heading" : "About Derrick Showers",
+		"copy" : [
+			"This information will provide more details around Derrick's professional career and education. While reading over resume below, take note of not just the strong technical skillset, but leadership and vital transferable skills that provide Derrick with a unique story, and set him apart from many others in the same field of work.",
+			"Want to see more than just a resume? Check out what Derrick is up to on the <a title=\"Twitter Link\" target=\"_blank\" href=\"http://twitter.com/derrickshowers\">Twitterverse</a>, the latest repos on <a title=\"Github link\" target=\"_blank\" href=\"http://github.com/derrickshowers\">Github</a>, or <a title=\"LinkedIn Link\" target=\"_blank\" href=\"http://www.linkedin.com/in/derrickshowers\">LinkedIn</a>."
+		]
 	},
 	"portfolio" : {
 		"id" : "portfolio",
@@ -19,6 +24,10 @@
 		]
 	},
 	"contact" : {
-		"id" : "contact"
+		"id" : "contact",
+		"phone" : "407.756.0916",
+		"email" : "derrick@derrickshowers.com",
+		"heading" : "Need More Information?",
+		"copy" : "Please take a moment to fill out the following if you would like more information, have a question, or just want to say \"hello!\""
 	}
 }
