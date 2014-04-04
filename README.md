@@ -39,3 +39,20 @@ Compile SASS once and minify it
 
     npm run sass
 
+## RequireJS
+
+Uses [RequireJS](http://requirejs.org/) for all JS assets. Not necessarily to its fullest potential, but as a way to concatenate and minify all JS. 
+
+To minify all JS:
+
+    npm run requirejs
+
+Switching the source in the head tag is a manual process. Go to views/layouts/main.handlebars to switch between main.js and ds.min.js.
+
+## Build
+
+Before pushing to production, run the following command in the site root:
+
+    npm run build
+
+This will take care of minifying all CSS and JS. Remember that changing the source in the head tag for the JS is a manual process. main.js needs to become ds.min.js if it isn't already.

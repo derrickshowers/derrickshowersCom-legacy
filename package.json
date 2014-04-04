@@ -5,14 +5,16 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "requirejs": "node_modules/.bin/r.js -o build.js",
     "sass": "sass --style compressed static/css/scss/main.scss:static/css/style.css",
     "sass-watch": "sass --watch static/css/scss/main.scss:static/css/style.css",
-    "build": "npm run sass",
+    "build": "npm run sass && npm run requirejs",
     "watch": "npm run sass-watch"
   },
   "author": "Derrick Showers",
   "dependencies": {
     "express": "~3.5.1",
-    "express3-handlebars": "~0.5.0"
+    "express3-handlebars": "~0.5.0",
+    "requirejs": "~2.1.11"
   }
 }

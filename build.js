@@ -1,4 +1,5 @@
-require.config({
+({
+	baseUrl: 'static/js',
 	paths: {
 		jquery: 'libs/jquery-1.8.2.min',
 		jqueryDropdown: 'libs/jquery.dropdown',
@@ -6,6 +7,8 @@ require.config({
 		respond: 'libs/respond.min',
 		bootstrap: 'libs/bootstrap'
 	},
+	name: 'main',
+	out: 'static/js/ds.min.js',
 	shim: {
 		jqueryDropdown: {
 			deps: ['jquery']
@@ -14,11 +17,7 @@ require.config({
 			deps: ['jquery']
 		},
 		scripts: {
-			deps: ['utils', 'jqueryDropdown', 'jquery']
+			deps: ['utils', 'jqueryDropdown']
 		}
 	}
-});
-
-require(['scripts', 'respond', 'bootstrap', 'modernizr'], function() {
-	
-});
+})
