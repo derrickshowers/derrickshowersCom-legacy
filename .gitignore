@@ -3,3 +3,6 @@ node_modules/
 
 # os x stuff
 .DS_Store
+
+# SASS
+.sass-cache

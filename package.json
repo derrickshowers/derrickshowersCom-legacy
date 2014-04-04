@@ -4,7 +4,11 @@
   "description": "my portfolio site",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --style compressed static/css/scss/main.scss:static/css/style.css",
+    "sass-watch": "sass --watch static/css/scss/main.scss:static/css/style.css",
+    "build" : "npm run sass",
+    "watch" : "npm run sass-watch"
   },
   "author": "Derrick Showers",
   "license": "BSD-2-Clause",
