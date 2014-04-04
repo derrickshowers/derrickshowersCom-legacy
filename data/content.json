@@ -5,8 +5,7 @@
 		"copy" : [
 			"Are you looking for an experienced, creative, and innovative web developer? Maybe you have a project in mind, and are looking to partner with someone who will take a sincere interest in bringing it to life? Or, maybe you just happened across this page, and are looking to feed your curiosity. Whatever the reason &ndash; welcome! Please continue clicking and scrolling to learn more about who I am.",
 			"I am an interactive web developer currently working and living out of the heart of Silicon Valley -- San Francisco, CA.  Since moving here, I have been involved in a number of projects that have enriched my competencies and skill set in a wide range of areas. I have found a career that I love, which impacts my ability to accomplish impressive quality and admirable creativity."
-		],
-		"footerScripts" : "<script src=\"//cdn.derrickshowers.com/dsCarousel.min.js\"></script><script>$(\"#dsCarouselContainer\").dsCarousel({slideDelay: 6000});</script>"
+		]
 	},
 	"about" : {
 		"id" : "about",

@@ -4,7 +4,8 @@ require.config({
 		jqueryDropdown: 'libs/jquery.dropdown',
 		modernizr: 'libs/modernizr-2.6.2.min',
 		respond: 'libs/respond.min',
-		bootstrap: 'libs/bootstrap'
+		bootstrap: 'libs/bootstrap',
+		dsCarousel: '//cdn.derrickshowers.com/dsCarousel.min'
 	},
 	shim: {
 		jqueryDropdown: {
@@ -14,11 +15,14 @@ require.config({
 			deps: ['jquery']
 		},
 		scripts: {
-			deps: ['utils', 'jqueryDropdown', 'jquery']
+			deps: ['jqueryDropdown']
+		},
+		dsCarousel: {
+			deps: ['jquery']
 		}
 	}
 });
 
-require(['scripts', 'respond', 'bootstrap', 'modernizr'], function() {
-	
+require(['scripts', 'respond', 'bootstrap', 'modernizr', 'dsCarousel'], function() {
+	$("#dsCarouselContainer").dsCarousel({slideDelay: 6000});
 });
