@@ -29,6 +29,11 @@ Using SASS to preprocess all CSS. Below is how things are setup:
 
 Instead of going with something like Grunt/Gulp, just using npm to watch/build SCSS files, using the following commands:
 
-Watch anything that needs watching (including *.scss):
+Watch main.scss (and anything included as an `@import` => compile it to style.css)
 
-    npm run watch
+    npm run sass-watch
+
+Compile SASS once and minify it
+
+    npm run sass
+
