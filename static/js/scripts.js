@@ -46,10 +46,15 @@ define(function() {
 			var failMsg = "<div id='<div id='thankYouMsg'>Oops! There was an problem.<br /><a href='#'>Please Try again</a></div>";
 			$.ajax({
 				type: "POST",
+				url: "/contact/sendmsg",
 				data: data
 			}).done(function(response) {
-				$("fieldset.right").remove();
-				$("#contactContainer").append(response);
+				if (response.message === 'success')
+					appendMessage("Hooray! Your message has been sent. Prepare to receieve a response shortly.");
+				else
+					appendMessage("Hmmm. Something didn't go quite right. The server isn't answering, so chances are good your message didn't go through. For now, try just sending an e-mail to <a href='mailto:derrick@derrickshowers.com'>derrick@derrickshowers.com</a>. Oh, and let me know there's something broke! :)");
+			}).fail(function() {
+				appendMessage("Hmmm... Something appears to have gone wrong. For now, try just sending an e-mail to <a href='mailto:derrick@derrickshowers.com'>derrick@derrickshowers.com</a>. Oh, and let me know there's something broke! :)");
 			});
 		}
 		return false;
@@ -67,9 +72,16 @@ define(function() {
 		if (network == "fb") window.open("http://www.facebook.com/derrickshowersweb/","Facebook");
 		if (network == "twitter") window.open("http://twitter.com/DerrickShowers","Twitter");
 		if (network == "li") window.open("http://www.linkedin.com/in/derrickshowers","LinkedIn");
-	})
+	});
 
-	function runValidation(){
+	function appendMessage(msgText) {
+		var el = $('<div/>').attr('id', 'thankYouMsg');
+		el.append(msgText);
+		$("fieldset.right").remove();
+		$("#contactInfo").after(el);
+	}
+
+	function runValidation() {
 	
 		// Rest Classes for Validation
 		$('#email').removeClass('errorBorder');

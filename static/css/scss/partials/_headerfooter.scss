@@ -91,13 +91,14 @@ header {
 			margin: 0 5px;
 		}
 		
-		.current-menu-item a,
-		.current_page_parent a {
-			color: #428bca;
-		}
-		
 	}
 	
+}
+
+#about #menu-about,
+#portfolio #menu-portfolio,
+#contact #menu-contact {
+	color: #428bca;
 }
 
 // Footer styles
