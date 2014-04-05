@@ -15,7 +15,7 @@ var smtpTransport = nodemailer.createTransport("SMTP",{
 	auth: {
 		user: "derrick@derrickshowers.com",
 		pass: process.env.MAIL_PASSWORD
-    }
+	}
 });
 
 // routes
@@ -61,14 +61,14 @@ app.post('/contact/sendmsg', function(req, res) {
 
 	// send it off
 	smtpTransport.sendMail(mailOptions, function(error, response){
-	    if (error) {
+		if (error) {
 			//console.log(error);
 			res.json(200, { message: 'failed' });
-	    } else {
+		} else {
 			//console.log("Message sent: " + response.message);
 			res.json(200, { message: 'success' });
-	    }
-	    smtpTransport.close();
+		}
+		smtpTransport.close();
 	});
 
 	//console.log(name + ', ' + email + ', ' + subject + ', ' + msg);
