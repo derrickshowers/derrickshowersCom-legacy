@@ -4,7 +4,6 @@
   "description": "my portfolio site",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "requirejs": "node_modules/.bin/r.js -o build.js",
     "sass": "sass --style compressed static/css/scss/main.scss:static/css/style.css",
     "sass-watch": "sass --watch static/css/scss/main.scss:static/css/style.css",
