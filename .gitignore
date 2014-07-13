@@ -6,3 +6,4 @@ node_modules/
 
 # SASS
 .sass-cache
+style.css.map
