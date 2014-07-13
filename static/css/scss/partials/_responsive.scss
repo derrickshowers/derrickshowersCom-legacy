@@ -2,9 +2,6 @@
 	header #headerLine {
 		width:90%;
 	}
-	#home #aSpot {
-		display:block;
-	}
 	#home #dsCarouselContainer {
 		display:none;
 	}
@@ -76,6 +73,9 @@
 	header nav .current-menu-item a,
 	header nav .current_page_parent a {
 		color:#455CA0;
+	}
+	.outer-container .container {
+		padding-top: 0;
 	}
 	#contact #submitted {
 		top:165px;

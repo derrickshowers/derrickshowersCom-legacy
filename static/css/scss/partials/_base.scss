@@ -10,6 +10,14 @@ a			{color:#1C3664;}
 
 ul			{margin:1em 0}
 
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  background-color: #1C3664;
+}
+
 .headingArea {
 	margin:40px 20px;
 }
@@ -19,6 +27,13 @@ ul			{margin:1em 0}
 	margin: 0 auto;
 	position: relative;
 	padding: 0;
+}
+.outer-container {
+  width: 100%;
+  background-color: #FFF;
+  .container {
+    padding-top: 60px;
+  }
 }
 .left {
 	float: left;

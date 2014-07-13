@@ -1,19 +1,19 @@
 // Header styles
 header {
-	height: 120px; width: 100%;
+	height: 60px; width: 100%;
 	background: #333333;
 	background: -webkit-linear-gradient(top,  #484848 0%,#333333 100%);
 	background: linear-gradient(to bottom, #484848 0%, #333333 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#666666', endColorstr='#333333',GradientType=0 );
 	box-shadow: 0 3px 6px 3px #333;
-	position: relative;
+	position: fixed;
 	z-index: 100;
 	
 	// Other header items
 	#logo{
-		top: 16px; left: 18px;
+		top: 7px; left: 18px;
 		position: absolute;
-		max-width: 140px;
+		max-width: 75px;
 	}
 	
 	#headerLine {
@@ -23,40 +23,9 @@ header {
 		background: url(../img/bg_headerLine.png) repeat-x;
 	}
 	
-	// Header social widget
-	#social {
-		display: none;
-		top: 10px; right: 20px;
-		padding: 0;
-		margin: 0;
-		list-style: none;
-		position: absolute;
-		
-		li {
-			margin: 2px 4px;
-			float: left;
-			
-			a {
-				background: url(../img/social_icons.png) no-repeat;
-				display: block;
-				height: 15px; width: 15px;
-				text-indent: -9999px;
-			}
-			
-			#li {
-				background-position: 0 -30px;
-			}
-			
-			#twitter {
-				background-position: 0 -15px;
-			}
-			
-		}	
-	}
-	
 	// Main navigation
 	nav {
-		top: 75px; right: 10px;
+		top: 14px; right: 10px;
 		font: 30px/30px BebasNeueRegular, Verdana, Arial, sans-serif;
 		text-transform: uppercase;
 		position: absolute;
@@ -103,8 +72,7 @@ header {
 
 // Footer styles
 footer {
-	height: 30px; width: 100%;
-	background-color: #1C3664;
+	height: 100%; width: 100%;
 	border-top: 3px solid #333;
 	
 	a {
