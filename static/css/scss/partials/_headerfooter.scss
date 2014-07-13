@@ -74,27 +74,50 @@ header {
 footer {
 	height: 100%; width: 100%;
 	border-top: 3px solid #333;
-	
-	a {
-		color: #FFF;
-		text-decoration: none;
-	}
-	
-	a:hover {
-		color: #FFF;
-		text-decoration: underline;
-	}
-	
+
 	ul {
 		list-style: none;
 		padding: 0;
 		margin: 0 10px;
-		color: #FFF;
-		font-size: 11px;
 		
 		li {
-			line-height: 25px;
+			display: inline-block;
 		}
+		.social-icon {
+			font-size: 38px;
+			color: #EDEDED;
+			text-decoration: none;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+		.copyright {
+			float: right;
+			line-height: 5em;
+			color: #EDEDED;
+			font-size: .75em;
+			color: #EDEDED;
+		}
+	}
+
+	.social-icon,
+	a.social-icon:before {
+    font-family: 'Mono Social Icons Font';
+    -webkit-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    -ms-text-rendering: optimizeLegibility;
+    -o-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+	}
+
+	a.social-icon:before {
+		content: attr(title);
+		margin-right: 0.3em;
 	}
 	
 }

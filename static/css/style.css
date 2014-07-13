@@ -5992,6 +5992,13 @@ td.visible-print {
   src: url("../fonts/BebasNeue-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeue-webfont.woff") format("woff"), url("../fonts/BebasNeue-webfont.ttf") format("truetype"), url("../fonts/BebasNeue-webfont.svg#BebasNeueRegular") format("svg");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'Mono Social Icons Font';
+  src: url("../fonts/MonoSocialIconsFont-1.10.eot");
+  src: url("../fonts/MonoSocialIconsFont-1.10.eot?#iefix") format("embedded-opentype"), url("../fonts/MonoSocialIconsFont-1.10.woff") format("woff"), url("../fonts/MonoSocialIconsFont-1.10.ttf") format("truetype"), url("../fonts/MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont") format("svg");
+  src: url("../fonts/MonoSocialIconsFont-1.10.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
 body {
   font-family: Verdana, Arial, sans-serif; }
 
@@ -6155,20 +6162,40 @@ footer {
   height: 100%;
   width: 100%;
   border-top: 3px solid #333; }
-  footer a {
-    color: #FFF;
-    text-decoration: none; }
-  footer a:hover {
-    color: #FFF;
-    text-decoration: underline; }
   footer ul {
     list-style: none;
     padding: 0;
-    margin: 0 10px;
-    color: #FFF;
-    font-size: 11px; }
+    margin: 0 10px; }
     footer ul li {
-      line-height: 25px; }
+      display: inline-block; }
+    footer ul .social-icon {
+      font-size: 38px;
+      color: #EDEDED;
+      text-decoration: none; }
+      footer ul .social-icon:hover {
+        text-decoration: none; }
+    footer ul .copyright {
+      float: right;
+      line-height: 5em;
+      color: #EDEDED;
+      font-size: .75em;
+      color: #EDEDED; }
+  footer .social-icon,
+  footer a.social-icon:before {
+    font-family: 'Mono Social Icons Font';
+    -webkit-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    -ms-text-rendering: optimizeLegibility;
+    -o-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased; }
+  footer a.social-icon:before {
+    content: attr(title);
+    margin-right: 0.3em; }
 
 #smallScreenResume {
   display: none; }
@@ -6673,6 +6700,9 @@ footer {
 
   footer .right {
     float: none; }
+
+  footer ul {
+    text-align: center; }
 
   #sidebar,
   #statusIndicators {
