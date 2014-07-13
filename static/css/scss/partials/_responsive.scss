@@ -74,8 +74,14 @@
 	header nav .current_page_parent a {
 		color:#455CA0;
 	}
-	.outer-container .container {
-		padding-top: 0;
+	.outer-container {
+		.container {
+			padding-top: 0;
+		}
+		.global-alert {
+			top: 0;
+			line-height: 20px;
+		}
 	}
 	#contact #submitted {
 		top:165px;

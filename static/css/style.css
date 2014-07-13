@@ -6057,6 +6057,22 @@ body {
   background-color: #FFF; }
   .outer-container .container {
     padding-top: 60px; }
+  .outer-container .global-alert {
+    position: relative;
+    top: 60px;
+    min-height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #428BCA;
+    color: #EDEDED;
+    text-align: center;
+    font-weight: bold;
+    z-index: 99; }
+    .outer-container .global-alert a {
+      color: #EDEDED;
+      text-decoration: underline; }
+      .outer-container .global-alert a:hover {
+        text-decoration: none; }
 
 .left {
   float: left; }
@@ -6631,6 +6647,9 @@ footer {
 
   .outer-container .container {
     padding-top: 0; }
+  .outer-container .global-alert {
+    top: 0;
+    line-height: 20px; }
 
   #contact #submitted {
     top: 165px; }

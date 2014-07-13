@@ -34,6 +34,25 @@ body {
   .container {
     padding-top: 60px;
   }
+  .global-alert {
+    position: relative;
+    top: 60px;
+    min-height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #428BCA;
+    color: #EDEDED;
+    text-align: center;
+    font-weight: bold;
+    z-index: 99;
+    a {
+      color: #EDEDED;
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
 }
 .left {
 	float: left;
