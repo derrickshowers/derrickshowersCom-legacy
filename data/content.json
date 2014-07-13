@@ -9,6 +9,7 @@
 	},
 	"about" : {
 		"id" : "about",
+		"alert" : "Honestly, this resume isn't really up to date. Best bet right now is to check out my <a href='http://linkedin.com/in/derrickshowers'>LinkedIn Profile</a>.",
 		"heading" : "About Derrick Showers",
 		"copy" : [
 			"This information will provide more details around Derrick's professional career and education. While reading over resume below, take note of not just the strong technical skillset, but leadership and vital transferable skills that provide Derrick with a unique story, and set him apart from many others in the same field of work.",
@@ -17,6 +18,7 @@
 	},
 	"portfolio" : {
 		"id" : "portfolio",
+		"alert" : "There's a ton of side projects you can check out, too, on <a href='http://github.com/derrickshowers'>Github!</a>",
 		"heading" : "Derrick's Portfolio",
 		"copy" : [
 			"Here's what everyone came to see, right? Over the past several years, I have spent a lot of time head-first in front end code - anything from HTML and CSS to more intensive JavaScript and jQuery, manipulating the DOM or creating snappy apps with AJAX functionality. Spend some time perusing the following highlights, if you will. Hopefully they will speak for themselves!"
