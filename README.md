@@ -2,6 +2,20 @@
 
 Repo for [derrickshowers.com](http://derrickshowers.com).
 
+## Getting Started
+
+1. Checkout the repo
+
+2. Install all dependencies
+
+        npm install
+
+3. Start the node server
+
+        node app.js
+
+4. View in the browser at [http://localhost:9999](http://localhost:9999)
+
 ## SASS
 
 Using SASS to preprocess all CSS. Below is how things are setup:
@@ -47,7 +61,7 @@ To minify all JS:
 
     npm run requirejs
 
-Switching the source in the head tag is a manual process. Go to views/layouts/main.handlebars to switch between main.js and ds.min.js.
+Switching the source in the head tag is a manual process. Go to views/layouts/main.handlebars to switch between main.js and ds.min.js. Note: this is done automatically when running the build command (below).
 
 ## Build
 
